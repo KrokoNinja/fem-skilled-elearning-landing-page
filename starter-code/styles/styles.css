@@ -2,16 +2,18 @@
 :root{
     /* Colors */
     --bg-primary: #FFFFFF;
-    --bg-secondary: #83869A;
+    --bg-accent: #13183F;
+    --bg-gradient: linear-gradient(0deg, #83869A 0%, #FFFFFF 100%);
+
+    --p-color: #83869A;
 
     --button-hover: #666CA3;
-    --button-default: #13183F;
 
     --get-started: #F74780;
     --get-started-hover: #FFA7C3;
 
-    --primary-gradient: linear-gradient(0deg, #F02AA6 0%, #FF6F48 100%);
-    --secondary-gradient: linear-gradient(0deg, #F02AA6 0%, #4851FF 100%);
+    --primary-button-gradient: linear-gradient(0deg, #F02AA6 0%, #FF6F48 100%);
+    --secondary-button-gradient: linear-gradient(0deg, #F02AA6 0%, #4851FF 100%);
 
     /* Typography */
     --fs-heading-xl: 3.5rem;
@@ -46,4 +48,54 @@ ol, ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Styling */
+
+body{
+    font-family: "Plus Jakarta Sans";
+}
+
+.headline{
+    font-size: var(--fs-heading-xl);
+    font-weight: bold;
+}
+
+.text{
+    color: var(--p-color);
+}
+
+.top-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.front-img{
+    
+}
+
+.content-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#header{
+    width: 100%;
+    border: 3px solid red;
+}
+
+#main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#footer{
+    width: 100%;
+    border: 3px solid blue;
+    background-color: var(--bg-accent);
 }
